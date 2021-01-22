@@ -38,11 +38,12 @@ background: linear-gradient(90deg, rgba(164,179,180,1) 0%, rgba(172,172,172,1) 1
 #Book{
        margin: 20px !important;
        gap: 20px;
-       width: 20%;
        max-inline-size: min-content;
 }
 
-#img{
+#img {
+    height: 20em;
+    width: 15em;
 }
 
 .color{
