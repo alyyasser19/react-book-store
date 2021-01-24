@@ -1,38 +1,15 @@
 import ReactDOM from 'react-dom';
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './Navbar';
-import Book from './Book';
-import Alert from './AlertsAPI';
+import Books from './Books';
 import React, { useState, useEffect } from 'react';
 
-const url = 'https://api.jsonbin.io/b/600c4fa8bca934583e40b589';
+function MangaHub() {
 
-
-function BookList() {
-  const [books,setBooks]=useState([]);
-
-  const getUsers = async()=>{
-    const response = await fetch(url);
-    const cur= await response.json();
-    setBooks(cur);
-  }
-
-  useEffect(()=>{
-    getUsers();
-  },[])
 
   return (
-    <section>
-    <NavBar/>
-    <Alert message="Your Best Manga Source"/>
-    <div id="container">
-      {books.map((book) =>{
-        return <Book key={book.web} {...book}></Book>;
-      })}
-      </div>
-    </section>
+  <Books/>
   );
 }
 
-ReactDOM.render(<BookList />, document.getElementById('root'));
+ReactDOM.render(<MangaHub />, document.getElementById('root'));

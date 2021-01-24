@@ -16,16 +16,11 @@ const NavBar = () => {
       </Nav>
     </Navbar.Collapse>
     </Router>
-     <div className="container h-100" id="search">
-     <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-      <div className="d-flex justify-content-center h-100">
-        <div className="searchbar">
-          <input className="search_input" type="text" name="" placeholder="Search..."/>
-          
-        </div>
-      </div>
-    </div>
-  </Navbar>
+<div className="search-box d-flex justify-center align-center">  
+              <input type="text" placeholder="Type to search .."/>
+             <div className="search-btn max-h-20 glyphicon glyphicon-search"/>
+            </div>
+    </Navbar>
     );
   }
 

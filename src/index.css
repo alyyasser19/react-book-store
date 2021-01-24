@@ -12,8 +12,9 @@ body {
 #home {
     color: black;
     margin-right: 2%;
-    font-size: 5em;
+    font-size: 6em;
     font-weight: 700;
+    margin-bottom: 0.7em;
 }
 
 #search{
@@ -24,7 +25,7 @@ body {
     background-color: #00A2E2;
     padding: 0px;
     width: 100%;
-    min-height: 7em;
+    min-height: 12em;
 }
 
 .nav-element {
@@ -48,10 +49,11 @@ body {
        margin: 15px !important;
        gap: 20px;
        max-inline-size: min-content;
+       text-align-last: center;
 }
 
 #img {
-    height: 18em;
+    height: 38em;
 }
 
 .color{
@@ -60,70 +62,62 @@ body {
 }
 
 .Title {
-    font-size: 18px;
+    font-size: 3em;
     margin: 2px;
     font-weight:600;
 }
 
 .Author {
-        font-size: 14px;
+        font-size: 2em;
         margin:2px;
         font-weight:500;
 }
- .searchbar{
-    margin-bottom: auto;
-    margin-top: auto;
-    height: px;
-    background-color: #353b48;
-    border-radius: 10px;
-    padding: 10px;
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+  
+}
 
-    }
+.search-box input {
+  border-radius: 0;
+  font-size: large;
+  border: 0;
+  box-shadow: 0 0 5px whitesmoke, 0 0 10px whitesmoke;
+  padding: 0;
+  width: 0;
+  transition: padding 0.6s ease-in-out,
+   width 0.6s ease-in-out;
+}
 
-    .search_input{
-    color: white;
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    }
-
-    .searchbar:hover > .search_input{
-    padding: 0 10px;
-    width: 450px;
-    caret-color:red;
-    transition: width 0.4s linear;
-    }
-
-    .searchbar:hover > .search_icon{
-    background: white;
-    color: #e74c3c;
-    }
-
-    .search_icon{
-    height: 40px;
-    width: 40px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color:white;
-    text-decoration:none;
-    background-image:  "logo.png";
-    
-    }
+.search-box:hover > input{
+  display: inline-block;
+  border-radius: 0;
+  font-size: large;
+  width: 15em;
+  outline: none;
+  color: #000 !important;
+  padding: 8px;
+  border: 1px solid whitesmoke;
+}
 
     #logo{
             size: 16px;
-            max-height: 5em;
-            margin-left: 6em;
+            max-height: 9em;
+            margin-left: 20em;
     }
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    font-size: 4.5em;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 4em;
+    margin-top: 0;
+}
 
-    #square{
-
-  background-color: #555;
-    }
