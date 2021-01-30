@@ -8,7 +8,7 @@ const AlertsAPI = ({message}) => {
         return (
             <>
                 <Alert show={true} onClose={() => setShow(false)} variant='success'  
-                    fade="ture" style={{textAlign : "center", fontSize: "1em"}}>
+                    fade="ture" style={{textAlign : "center", fontSize: "3em"}}>
                     {message}
                     </Alert>
             </>

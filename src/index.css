@@ -1,14 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Medula One', cursive;
+    box-sizing: border-box;
+
 }
 
 body {
     color: white !important;
     background-color: black !important;
-   
+    font-family: 'Medula One', cursive !important;
+    line-height: 1.7;
 }
+
 #home {
     color: black;
     margin-right: 2%;
@@ -129,11 +132,13 @@ body {
 .form > h1{
     font-size: 5.8em;
     margin:auto;
+    margin-bottom: 25px;
 }
 
 .form-group{
     font-size: 2em;
     font-weight: 100 !important;
+    text-align: -webkit-auto;
 }
 
 label{
@@ -163,9 +168,9 @@ button{
 .login{
     inline-size: 50em;
     margin: auto;
-    border: 1em solid royalblue;
+    border: 0.5em solid #00A2E2;
     padding: 5em;
-    margin-top: 3em;  
+    margin-top: 10em;  
     background: #000;
 }
 
@@ -177,6 +182,28 @@ button{
     position:absolute;
 }
 
+.custom-control {
+    position: relative;
+    z-index: 1;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    text-align: center;
+}
+
 input{
     font-size: 50px;
+}
+
+#book-link{
+    text-decoration: none;
+    color: #fff ;
+}
+
+
+.Title:hover{
+    text-decoration: none;
+    color: #00A2E2 ;
 }

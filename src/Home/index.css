@@ -1,0 +1,144 @@
+/*
+COLORS:
+
+Blues: #00A2E2, #2c5267, #0c78a3
+Black: #000
+white: #fff
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* So that borders and padding are no longer added to total width and height */
+}
+
+body {
+  font-family: "Medula One", cursive;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fff;
+  padding: 25px;
+}
+
+.header {
+  position: relative;
+  height: 80vh;
+  background-image: linear-gradient(
+      to right bottom,
+      #0c78a3b9,
+      #2c5267b9,
+      #00a2e2b9
+    ),
+    url(../images/Mikasa.jpg);
+  background-size: cover;
+  background-position: top;
+  color: #000;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+.heading-center {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  inline-size: fit-content;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.logo-box {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.logo {
+  height: 15vh;
+}
+
+.logo-text {
+  float: right;
+  margin: 2vh;
+  font-size: 4em;
+}
+
+.heading-center-text {
+  display: block;
+  text-transform: uppercase;
+  font-size: 10vh;
+  letter-spacing: 5px;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  transition: all 0.5s;
+  position: relative;
+  animation-name: fade-btn;
+  animation-duration: 3s
+}
+
+.btn:hover {
+  color: #00a2e2 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  color: #fff !important;
+  box-shadow: 0 5px 10px;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #000;
+  transition: all .4s;
+}
+
+.btn:hover::after {
+    transform:scaleX(1.5) scaleY(1.7);
+    opacity: 0;
+}
+
+.btn-manga {
+  background-color: #000;
+  color: #fff;
+  font-size: 2em;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    letter-spacing: 30px;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 5px;
+  }
+}
+
+@keyframes fade-btn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
